@@ -18,6 +18,20 @@ HEADERS += \
 FORMS += \
     mainwindow.ui
 
+# 设置头文件路径
+INCLUDEPATH += /home/tang/ffmpeg_build/include
+
+# 设置库文件路径
+LIBS += -L/usr/local/Cellar/ffmpeg/4.3.2/lib \
+        -lavcodec \
+        -lavdevice \
+        -lavfilter \
+        -lavformat \
+        -lavutil \
+        -lpostproc \
+        -lswscale \
+        -lswresample
+
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
