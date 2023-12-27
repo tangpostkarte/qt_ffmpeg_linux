@@ -22,7 +22,7 @@ FORMS += \
 INCLUDEPATH += /home/tang/ffmpeg_build/include
 
 # 设置库文件路径
-LIBS += -L/usr/local/Cellar/ffmpeg/4.3.2/lib \
+LIBS += -L/home/tang/ffmpeg_build/lib \
         -lavcodec \
         -lavdevice \
         -lavfilter \
